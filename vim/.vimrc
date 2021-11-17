@@ -1,0 +1,1 @@
+Details in https://github.com/amix/vimrc

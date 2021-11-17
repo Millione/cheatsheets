@@ -1,0 +1,41 @@
+[user]
+	name = Millione
+	email = isjieliu@163.com
+	signingkey = ****************************************
+[ui "color"]
+	ui = always
+[color]
+	ui = true
+[core]
+    eol = lf
+	autocrlf = false
+	safecrlf = true
+[alias]
+	c = commit
+	b = branch
+	st = status
+	lg = log --oneline
+	last = log -1 HEAD
+	cl = log -p -- ':(exclude)Cargo.lock'
+	f = push --force-with-lease
+	sl = stash list
+[pull]
+	ff = only
+[push]
+	default = simple
+[help]
+	autocorrect = 1
+[url "git@github.com:"]
+	insteadOf = gh:
+[diff]
+	algorithm = patience
+	compactionHeuristic = true
+[commit]
+	gpgsign = true
+[protocol]
+	version = 2
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
